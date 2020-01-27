@@ -1,0 +1,13 @@
+POST http://localhost:8080/users/login
+// --- this is authentication
+Content-Type: application/json
+
+{
+        "email" : "natankrasney@gmail.com" , "password" : "123sae"
+}
+
+###
+GET http://localhost:8080/users/meetings
+// --- this is authorization
+// --- TODO CHANGE : put after Bearer the fresh token from login
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJuYXRhbmtyYXNuZXlAZ21haWwuY29tIiwiZXhwIjoxNTgwMTI5MjI1LjUsImlhdCI6MTU4MDEyODAyNX0.9ijs2OCOpvO4qFoK3ZJL_UNl7ITZ0k_LGAm05H6DXE4
