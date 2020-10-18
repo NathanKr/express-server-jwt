@@ -7,6 +7,7 @@ function authenticationIsOk(req, user) {
 }
 
 const secret = "xa12LA-9&%";
+const algorithms = ['sha1', 'RS256', 'HS256'];
 
 function createToken(user) {
   const validTimeSec = 20 * 60; // --- token expire after 20 minutes
@@ -16,7 +17,8 @@ function createToken(user) {
 }
 
 module.exports = {
-  authenticationIsOk: authenticationIsOk,
-  createToken: createToken , 
-  secret : secret
+  authenticationIsOk,
+  createToken , 
+  secret ,
+  algorithms
 };

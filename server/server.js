@@ -21,7 +21,7 @@ app.post("/users/login", (req, res) => {
     }
 });
 
-app.get('/users/meetings' , jwtVerifier({secret:utils.secret}) ,(req,res) =>{
+app.get('/users/meetings' , jwtVerifier({secret:utils.secret , algorithms: utils.algorithms}) ,(req,res) =>{
     console.log('access /users/meetings');
     
     console.log(req.user);

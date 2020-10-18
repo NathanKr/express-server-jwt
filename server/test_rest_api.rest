@@ -10,4 +10,4 @@ Content-Type: application/json
 GET http://localhost:8080/users/meetings
 // --- this is authorization
 // --- TODO CHANGE : put after Bearer the fresh token from login
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJuYXRhbmtyYXNuZXlAZ21haWwuY29tIiwiZXhwIjoxNTgwMTI5MjI1LjUsImlhdCI6MTU4MDEyODAyNX0.9ijs2OCOpvO4qFoK3ZJL_UNl7ITZ0k_LGAm05H6DXE4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJuYXRhbmtyYXNuZXlAZ21haWwuY29tIiwiZXhwIjoxNjAzMDExMjExLjY0NSwiaWF0IjoxNjAzMDEwMDExfQ.jUcqUWN8NlRyvCCjoB9uSDrQfXs2dysdsJmkvndCecw
